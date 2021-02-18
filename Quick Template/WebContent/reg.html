@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Registrazione</title>
+		<link rel="stylesheet" href="css/default.css" type="text/css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+      	<!-- Inclusione del JavaScript -->
+	  	<script src="js/pass.js"></script> 
+	</head>
+	
+	<body>
+	
+		<h1>Benvenuto nella pagina di Registrazione!</h1>
+		Inserisci i tuoi dati qui sotto:<br><br> 
+		
+		<!-- Form che utilizza il metodo POST. "servletRegistration" è l'url dove è mappata la Servlet  -->
+		<form method="post" action="servletRegistration">
+			
+			<!-- Username -->
+			Username: <input name="username" />
+			<!-- Password -->
+		  	<br> Password: <input type="password" id="passwordField" name="password">
+			<!-- Bottone per mostrare/nascondere la password, utilizza JavaScript -->
+			<input type="checkbox" onclick="passHider()">Visualizza password<br>
+			
+			<br><br>
+			
+			<!-- Submit, permette di inviare i dati -->
+			<input type="submit" value="Procedi"/>
+			
+		</form>
+		
+		<br><br><a href="index.jsp">Torna alla pagina principale</a>
+		
+	</body>
+</html>

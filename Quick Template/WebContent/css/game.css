@@ -1,0 +1,18 @@
+
+/* Assegno al div "plancia" il seguente stile: */
+#plancia {
+	position:relative;
+	margin:0 auto 2em auto;
+	width:20em;
+	height:20em;
+}
+
+.cella {
+    outline: 1px solid red;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+    float: left;
+    height: 2em;
+    width: 2em;   
+}
